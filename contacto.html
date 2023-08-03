@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    
+<body class="body-form">
+        
+    <header>
+        <nav>
+            <nav class="flex-container">
+                <h1 class="logo">Huellas ONG</h1>
+                <ul class="menu">
+                    <li><a class="item-nav" href="./index.html">Inicio</a></li>
+                    <li><a class="item-nav" href="./perdidos.html">Perdidos</a></li>
+                    <li><a class="item-nav" href="./encontrados.html">Encontrados</a></li>
+                    <li><a class="item-nav" href="./enadopcion.html">En adopción</a></li>
+                    <li><a class="item-nav" href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        <img class="img-header" src="media/patita-contacto.jpg" alt="patita de animal">
+    </header>
+
+<main>
+
+<!-- form -->
+
+    <div class="formulario">
+        <h2 class="contacto-titulo">Contacto: ¡Hablemos!</h2>
+        <form class="contacto-form" action="formulario.php" method="post" enctype="multipart/form-data">
+           
+        <fieldset class="contacto-recuadro">
+                <label for="nombreyapellido">Nombre y apellido</label>
+                <input type="text" name="nombreyapellido" id="nombreyapellido">
+                <br><br><br>
+                <div>
+                    <label for="fnac">Fecha de nacimiento</label>
+                    <input type="date" name="fnac" id="fnac">
+                </div>
+                <br><br>
+                <label for="lugar">¿De dónde sos?</label>
+                <select name="lugar" id="lugar">
+                    <option value="LaPlata">La Plata</option>
+                    <option value="Ensenada">Ensenada</option>
+                    <option value="Berisso">Berisso</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <br><br>
+                <label for="dire">Domicilio</label>
+                <input type="text" name="dire" id="dire">
+
+                <br><br>
+                <div> 
+                    <input type="tel" name="" id="" placeholder="Tu teléfono">
+                    <input type="email" name="" id="" placeholder="Tu mail">
+                </div>
+                <br><br>
+                <label for="dni">
+                    DNI <input type="number" name="dni" id="dni" required>
+                </label>
+                <br><br>
+                    <div>
+                ¿Querés ser parte de Huellas ONG? <input type="checkbox" name="1" id="">
+                <br>
+                <br>          
+             
+                    <label for="lista">¿En qué horario podemos llamarte?</label>
+                    De 8 a 12 <input type="radio" name="lista" id="" value="mañana">
+                    De 14 a 18 <input type="radio" name="lista" id="" value="tarde">
+                    Después de las 18 <input type="radio" name="lista" id="" value="noche">
+                </div>
+                <br>
+                <label for="comentario">Contanos tu caso:</label>
+                <br> 
+                <textarea name="comentario" id="comentario" cols="30"
+                    rows="10"></textarea>
+                <br>
+                <div>
+                    <input type="file" name="" id="" placeholder="contanos tu caso">
+                </div>
+                <br><br>
+                <input type="reset" value="Borrar">
+                <input type="submit" value="Enviar"> 
+                
+            </fieldset>
+        </form>
+    </div>
+
+
+
+</main>
+
+<footer>
+    <p class="p-footer">Huellas ONG | Todos los derechos reservados | 2023 | <a href="https://www.instagram.com/huellas_ong" target="_blank" class="link-ig">Contactanos</a></p>
+</footer>
+
+</body>
+
+</html>

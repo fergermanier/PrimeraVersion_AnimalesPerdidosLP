@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Header - menú de navegación*/
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(143, 76, 206);
+}
+
+.logo {
+    margin: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.7em;
+}
+
+.logo .menu {
+    letter-spacing: 0.45em;
+    font-size: 1.5em;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    display: block;
+    padding: 1em;
+}
+
+.item-nav {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.item-nav:hover {
+   text-decoration:underline;
+   color: violet;
+}
+
+.img-header {
+    width: 100%;
+    height: 100%;
+}
+
+.body-index{
+    background-color: white;
+}
+
+/*Section Quiénes somos*/
+
+.quienessomos .contenedor-quienessomos {
+    display: flex;
+    border: 3px solid blueviolet;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+.flex-item {
+    margin: 5px;
+    background: rgb(210, 237, 247);
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+.quienessomos h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: blueviolet;
+    text-align: center;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.quienessomos p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+}
+
+/* Section Nosotras*/
+
+.nosotras{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.nosotras .integrante-equipo {
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    background: radial-gradient(pink, blueviolet);
+}
+
+.nosotras .integrante-foto {
+    position: relative;
+    overflow: hidden;
+}
+
+.nosotras img {
+    width: 200px;
+    height: 200px;
+    margin: 20px; 
+    border: 1px solid blueviolet;
+}
+
+.nosotras .integrante-equipo .integrante-foto .integrante-info {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.integrante-info h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Section Identidad */
+
+.identidad {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    background-color: rgb(210, 237, 247);
+    padding: 20px;
+}
+
+.contenedor.identidad {
+    display:flex;
+}
+
+.identidad h4{
+    color:blueviolet;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    justify-self: 10px;
+}
+
+.identidad p{
+    color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+.identidad-ul li {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Formulario */
+
+.body-form {
+    background-color: white;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.contacto-titulo{
+    color: white;
+    background-color: blueviolet;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-weight: bolder;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-inline: 10px;
+    margin-top: 10px;
+}
+
+.contacto-form {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario .contacto-recuadro {
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    background: linear-gradient(blueviolet, rgb(253, 119, 235));
+    border-color: blueviolet;
+    padding: 10px;
+}
+
+
+/* Section Footer */
+
+.p-footer  {
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    background-color: blueviolet;
+    bottom: 0%;
+}
+.link-ig{
+    color: white;
+}
+
+/* / Extra small devices (pantalla celular vertical, menos de 576px) */
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .logo {
+        margin-left: -8px;
+    }
+    
+    .img-header {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /*mobile sección quiénes somos*/
+    
+    .quienessomos {
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .contenedor-quienessomos {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .flex-item {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /*mobile sección nosotras*/
+    
+    .nosotras {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nosotras .integrante-equipo{
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    /*mobile sección identidad*/
+    
+    .identidad {
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .contenedor.identidad {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .flex-item-identidad {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /*mobile contacto form*/
+
+    .formulario {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .contacto-titulo {
+        margin-top: 3px;
+        flex-direction: column;
+    }
+    
+    .contacto-form{
+        display: flex;
+        flex-direction: column;
+    }
+
+   
+     /* mobile footer */
+    
+     .footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 250px;
+    }
+    
+    .footer p {
+        margin-top: 50px;
+     }
+    
+    .footer ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    
+    .footer ul li {
+        margin: 5px;
+    }
+    
+}
+
+/*media querie para pantalla intermedia*/
+@media screen and (min-width: 768px) and
+(max-width: 1024px) {
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .logo {
+        margin-left: -8;
+    }
+    
+    .img-header {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /*Sección quiénes somos*/
+    
+    .quienessomos {
+        display:flex;
+        flex-direction: column;
+        margin: 25px;
+        margin-left: 35px;
+    }
+    
+    .contenedor-quienessomos {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .flex-item {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /*Sección nosotras*/
+    
+    .nosotras {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nosotras .integrante-equipo{
+        width: 50%;
+        margin-top: 10px;
+    }
+    
+    /*Sección identidad*/
+    
+    .identidad {
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .contenedor.identidad {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .flex-item-identidad {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /*tablet contacto form*/
+
+    .formulario {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .contacto-titulo {
+        margin-top: 3px;
+        flex-direction: column;
+    }
+    
+    .contacto-form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*footer */
+    
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer p {
+        margin-top: 50px;
+    }
+}
