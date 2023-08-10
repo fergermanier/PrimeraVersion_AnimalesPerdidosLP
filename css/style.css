@@ -4,55 +4,52 @@
 }
 
 
-/*Header - menú de navegación*/
+/*barra de navegación*/
 
-.flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgb(143, 76, 206);
-}
-
-.logo {
-    margin: 10px;
-    color: white;
+.navbar {
+    background: blueviolet;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar-brand{
+    color: white;
+    font-weight: bolder;
     font-size: 1.7em;
+    margin: 5px;
 }
 
-.logo .menu {
-    letter-spacing: 0.45em;
-    font-size: 1.5em;
+.navbar-brand:hover{
+    color: pink;
 }
 
-.menu {
-    display: flex;
+.navbar-nav{
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.menu li {
-    display: block;
-    padding: 1em;
-}
-
-.item-nav {
+.nav-link {
     text-decoration: none;
     color: white;
-    font-size: 1em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.item-nav:hover {
-   text-decoration:underline;
-   color: violet;
+.nav-link:hover{
+    color: pink;
+}
+
+.icono-boton{
+    color: white;
+}
+
+
+/*index*/
+
+.body-index{
+    background-color: white;
 }
 
 .img-header {
     width: 100%;
     height: 100%;
-}
-
-.body-index{
-    background-color: white;
 }
 
 /*Section Quiénes somos*/
@@ -146,10 +143,11 @@
     display:flex;
 }
 
-.identidad h4{
+.identidad .h2-identidad{
     color:blueviolet;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
+    font-weight: bold;
     justify-self: 10px;
 }
 
@@ -166,6 +164,86 @@
     text-decoration: none;
     list-style: none;
 }
+
+/*página perdidos*/
+
+/*Perdidos Carrusel*/
+   
+.carousel .slide{
+ width: 100%;
+}
+
+/*barra transversal de corte*/
+
+.h2-perdidos{
+color: black;
+text-align: center;
+margin-top: 0px;
+margin-bottom: 0px;
+background: rgb(210, 237, 247);
+padding: 10px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 20px;
+font-weight: bolder;
+}
+
+/* cards animales perdidos*/
+
+.animales-perdidos{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    justify-content: space-around;
+    object-fit: cover;
+}
+
+.animales-perdidos .animal-caso {
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    background: linear-gradient(rgb(210, 237, 247), blueviolet);
+}
+
+.animales-perdidos .animal-foto {
+    position: relative;
+    overflow: hidden;
+}
+
+.animales-perdidos img {
+    width: 200px;
+    height: 200px;
+    margin: 20px; 
+    border: 1px solid blueviolet;
+}
+
+.animales-perdidos .animal-caso .animal-foto .animal-info {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.animal-info h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.animal-info h3 { 
+    color: white;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.animal-info h2{
+    color: white;
+    font-size: 14px;
+    margin: 10px;
+}
+
+/*página Contacto*/
 
 /* Formulario */
 
@@ -211,57 +289,40 @@
 }
 
 
-/* Section Footer */
+/* Footer */
 
 .p-footer  {
     width: 100%;
     text-align: center;
-    line-height: 30px;
+    line-height: 40px;
     color: white;
     background-color: blueviolet;
     bottom: 0%;
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
+
 .link-ig{
-    color: white;
+    color: pink;
 }
+
+/*media queries index*/
 
 /* / Extra small devices (pantalla celular vertical, menos de 576px) */
 @media (min-width: 320px) and (max-width: 575.98px) {
 
-    .flex-container {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .menu {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .logo {
-        margin-left: -8px;
-    }
-    
-    .img-header {
-        display: flex;
-        flex-direction: column;
-    }
-    
     /*mobile sección quiénes somos*/
     
     .quienessomos {
-        display:flex;
         flex-direction: column;
     }
     
     .contenedor-quienessomos {
-        display: flex;
-        flex-direction: column;
+       flex-direction: column;
     }
     
     .flex-item {
-        display: flex;
-        flex-direction: column;
+       flex-direction: column;
     }
     
     /*mobile sección nosotras*/
@@ -293,73 +354,13 @@
         display: flex;
         flex-direction: column;
     }
-    
-    /*mobile contacto form*/
 
-    .formulario {
-    display: flex;
-    flex-direction: column;
-    }
-    
-    .contacto-titulo {
-        margin-top: 3px;
-        flex-direction: column;
-    }
-    
-    .contacto-form{
-        display: flex;
-        flex-direction: column;
-    }
-
-   
-     /* mobile footer */
-    
-     .footer {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 250px;
-    }
-    
-    .footer p {
-        margin-top: 50px;
-     }
-    
-    .footer ul {
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
-    }
-    
-    .footer ul li {
-        margin: 5px;
-    }
-    
 }
 
 /*media querie para pantalla intermedia*/
 @media screen and (min-width: 768px) and
 (max-width: 1024px) {
 
-    .flex-container {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .menu {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .logo {
-        margin-left: -8;
-    }
-    
-    .img-header {
-        display: flex;
-        flex-direction: column;
-    }
-    
     /*Sección quiénes somos*/
     
     .quienessomos {
@@ -408,10 +409,97 @@
         display: flex;
         flex-direction: column;
     }
-    
-    /*tablet contacto form*/
+}
 
-    .formulario {
+/*media queries página perdidos*/
+
+/* / Extra small devices (pantalla celular vertical, menos de 576px) */
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+.animales-perdidos {
+flex-direction: column;
+align-items: center;
+}
+
+.animales-perdidos .animal-caso{
+width: 70%;
+margin-top: 10px;
+padding-top: 15px;
+}
+}
+
+ /*media querie para pantalla intermedia*/
+
+ @media screen and (min-width: 768px) and
+ (max-width: 1024px){
+
+.animales-perdidos {
+    flex-direction: column;
+    align-items: center;
+}
+
+.animales-perdidos .animal-caso{
+    width: 40%;
+    margin-top: 15px;
+    padding: 15px;
+}
+}
+
+/*media queries página Contacto y footer*/
+
+/* / Extra small devices (pantalla celular vertical, menos de 576px) */
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+  /*mobile contacto form*/
+
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .contacto-titulo {
+        margin-top: 3px;
+        flex-direction: column;
+    }
+    
+    .contacto-form{
+        display: flex;
+        flex-direction: column;
+    }
+
+   
+     /* mobile footer */
+    
+     .footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 250px;
+    }
+    
+    .footer p {
+        margin-top: 50px;
+     }
+    
+    .footer ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    
+    .footer ul li {
+        margin: 5px;
+    }
+  
+}
+
+/*media querie para pantalla intermedia*/
+@media screen and (min-width: 768px) and
+(max-width: 1024px) {
+
+  /*tablet contacto form*/
+
+  .formulario {
     display: flex;
     flex-direction: column;
     }
@@ -436,4 +524,4 @@
     .footer p {
         margin-top: 50px;
     }
-}
+}   
