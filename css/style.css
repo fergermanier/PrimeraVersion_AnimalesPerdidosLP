@@ -90,23 +90,27 @@
 
 /* Section Nosotras*/
 
+.h2-nosotras{
+    display: flex;
+    color: white;
+    background-color: blueviolet;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  justify-content: center;
+  margin-top: 25px;
+}
+
 .nosotras .contenedor-nosotras{
     display: flex;
     justify-content: center;
     margin-bottom: 0px;
-    margin-top: 20px;
+    margin-top: 10px;
     justify-content: space-around;
     background-color: rgb(210, 237, 247);
     padding: 30px;
 }
 
-.h2-nosotras{
-    display: flex;
-    color:blueviolet;
-    text-decoration: underline;
-    font-weight: bolder;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
 
 .nosotras .integrante-equipo {
     overflow: hidden;
@@ -194,7 +198,7 @@ margin-bottom: 0px;
 background: rgb(210, 237, 247);
 padding: 10px;
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-size: 25px;
+font-size: 20px;
 font-weight: bolder;
 }
 
@@ -254,7 +258,165 @@ font-weight: bolder;
     margin: 10px;
 }
 
-/*página Contacto*/
+/*Página encontrados*/
+
+/*Encontrados Carrusel*/
+   
+.carousel .slide{
+    width: 100%;
+   }
+   
+   /*barra transversal de corte*/
+   
+   .h2-encontrados{
+   color: black;
+   text-align: center;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   background: antiquewhite;
+   padding: 10px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 20px;
+   font-weight: bolder;
+   }
+
+/* cards encontrados*/
+   
+.animales-encontrados{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    justify-content: space-around;
+    object-fit: cover;
+}
+
+.animales-encontrados .animal-caso {
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    background: linear-gradient(antiquewhite, blueviolet);
+}
+
+.animales-encontrados .animal-foto {
+    position: relative;
+    overflow: hidden;
+}
+
+.animales-encontrados img {
+    width: 200px;
+    height: 200px;
+    margin: 20px; 
+    border: 1px solid blueviolet;
+}
+
+.animales-encontrados .animal-caso .animal-foto .animal-info {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.animal-info h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.animal-info h3 { 
+    color: white;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.animal-info h2{
+    color: white;
+    font-size: 14px;
+    margin: 10px;
+}
+
+
+/*Página En adopción*/
+
+/* Section Refugios */
+
+.refugios {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background: linear-gradient(blueviolet, rgb(210, 237, 247));
+    padding: 20px;
+}
+
+.contenedor.refugios {
+    display:flex;
+}
+
+.refugios .h2-refugios{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold;
+    justify-self: 10px;
+}
+
+.refugios .h2-refugios-cierre{
+    color: black;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+}
+
+.refugios p{
+    color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+.span-refugios{
+    font-weight: bolder;
+}
+
+
+
+/*Section Información refugios*/
+
+
+.card {
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.card-header{
+    background-color: rgb(210, 237, 247);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+
+.card-body, .card-title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card-title{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.btn-primary {
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.btn-primary:hover{
+    color: pink;
+    background-color: blueviolet;
+    border: none;
+}
+
+/*Página Contacto*/
 
 /* Formulario */
 
@@ -294,7 +456,7 @@ font-weight: bolder;
     margin-bottom: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
-    background: linear-gradient(blueviolet, rgb(253, 119, 235));
+    background: linear-gradient(blueviolet, antiquewhite);
     border-color: blueviolet;
     padding: 10px;
 }
@@ -316,6 +478,8 @@ font-weight: bolder;
 .link-ig{
     color: pink;
 }
+
+/*MEDIA QUERIES SITIO - POR PÁGINA*/
 
 /*media queries index*/
 
@@ -469,6 +633,75 @@ padding-top: 15px;
     padding: 15px;
 }
 }
+
+/*media queries página perdidos*/
+
+/* / Extra small devices (pantalla celular vertical, menos de 576px) */
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+.animales-perdidos {
+flex-direction: column;
+align-items: center;
+}
+
+.animales-perdidos .animal-caso{
+width: 70%;
+margin-top: 10px;
+padding-top: 15px;
+}
+}
+
+ /*media querie para pantalla intermedia*/
+
+ @media screen and (min-width: 768px) and
+ (max-width: 1024px){
+
+.animales-perdidos {
+    flex-direction: column;
+    align-items: center;
+}
+
+.animales-perdidos .animal-caso{
+    width: 40%;
+    margin-top: 15px;
+    padding: 15px;
+}
+}
+
+/*media queries página encontrados*/
+
+/* / Extra small devices (pantalla celular vertical, menos de 576px) */
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+    .animales-encontrados {
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .animales-encontrados .animal-caso{
+    width: 70%;
+    margin-top: 10px;
+    padding-top: 15px;
+    }
+    }
+    
+     /*media querie para pantalla intermedia*/
+    
+     @media screen and (min-width: 768px) and
+     (max-width: 1024px){
+    
+    .animales-encontrados {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .animales-encontrados .animal-caso{
+        width: 40%;
+        margin-top: 15px;
+        padding: 15px;
+    }
+    }
+
 
 /*media queries página Contacto y footer*/
 
